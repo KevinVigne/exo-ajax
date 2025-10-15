@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+
 <button id="loadBtn">Charger</button>
 <div id="loader" hidden>⏳ Chargement…</div>
 <p id="err" style="color:red;"></p>
+
+<form id="postForm">
+  <input name="title" placeholder="Titre" required>
+  <textarea name="body" placeholder="Contenu"></textarea>
+  <button>Ajouter</button>
+</form>
+
+<input id="search" placeholder="Filtrer titres…">
+
 <ul id="posts"></ul>
+
 <script type="module" src="js/app.js"></script>
 </body>
 </html>
